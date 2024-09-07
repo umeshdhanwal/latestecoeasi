@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/0779b60f-ee45-45e9-b931-074cb445da22/resourceGroups/ecoeasi/providers/Microsoft.Web/sites/ecoeasi",
+    "appService.deploySubpath": "."
+}

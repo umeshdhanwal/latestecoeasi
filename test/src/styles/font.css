@@ -1,0 +1,42 @@
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/PoppinsMedium.ttf");
+  font-family: "Poppins";
+  font-weight: 500;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/NunitoBold.ttf");
+  font-family: "Nunito";
+  font-weight: 700;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/NunitoExtraBold.ttf");
+  font-family: "Nunito";
+  font-weight: 800;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/NunitoRegular.ttf");
+  font-family: "Nunito";
+  font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/LatoBlack.ttf");
+  font-family: "Lato";
+  font-weight: 900;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/NunitoSemiBold.ttf");
+  font-family: "Nunito";
+  font-weight: 600;
+}
