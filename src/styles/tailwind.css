@@ -58,6 +58,10 @@ li:hover {
   Container CSS
 --------------------------------------*/
   .container-xs {
+<<<<<<< HEAD
     @apply w-full mx-auto max-w-[1402px];
+=======
+    @apply w-full mx-auto max-w-[1400px];
+>>>>>>> 149918b39c59d0d938156bf789d8820ff62cf335
   }
 }

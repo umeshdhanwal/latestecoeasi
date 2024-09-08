@@ -28,6 +28,10 @@ module.exports = {
           "400_03": "#c5c5c5",
           "400_3f": "#b2b2b23f",
           "50_01": "#f9f9fb",
+<<<<<<< HEAD
+=======
+          "50_02": "#f4fff4",
+>>>>>>> 149918b39c59d0d938156bf789d8820ff62cf335
           "50_19": "#f9f9f919",
         },
         green: {
@@ -48,7 +52,12 @@ module.exports = {
         red: { 300: "#ff6868" },
         white: { a700: "#ffffff", a700_19: "#ffffff19" },
         yellow: { 100: "#ffedcc" },
+<<<<<<< HEAD
         colors: "#000000ff",
+=======
+        colors: "#19971c",
+        colors1: "4CAF4F",
+>>>>>>> 149918b39c59d0d938156bf789d8820ff62cf335
       },
       boxShadow: { xs: "5px 10px 21px 0 #b2b2b23f" },
       fontFamily: { nunito: "Nunito", poppins: "Poppins" },

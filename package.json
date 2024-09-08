@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "umeshs-application-27",
+=======
+  "name": "latest_ecoeasi",
+>>>>>>> 149918b39c59d0d938156bf789d8820ff62cf335
   "version": "0.1.0",
   "private": true,
   "dependencies": {

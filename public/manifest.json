@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "short_name": "Umesh's Application27",
   "name": "Umesh's Application27",
+=======
+  "short_name": "Umesh's Application22",
+  "name": "Umesh's Application22",
+>>>>>>> 149918b39c59d0d938156bf789d8820ff62cf335
   "icons": [
     {
       "src": "favicon.ico",

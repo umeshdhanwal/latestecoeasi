@@ -1,41 +1,62 @@
 @font-face {
   font-display: swap;
   font-style: normal;
+<<<<<<< HEAD
   src: url("/fonts/PoppinsMedium.ttf");
+=======
+  src: url("/public/fonts/PoppinsMedium.ttf");
+>>>>>>> 149918b39c59d0d938156bf789d8820ff62cf335
   font-family: "Poppins";
   font-weight: 500;
 }
 @font-face {
   font-display: swap;
   font-style: normal;
+<<<<<<< HEAD
   src: url("/fonts/NunitoBold.ttf");
+=======
+  src: url("/public/fonts/NunitoBold.ttf");
+>>>>>>> 149918b39c59d0d938156bf789d8820ff62cf335
   font-family: "Nunito";
   font-weight: 700;
 }
 @font-face {
   font-display: swap;
   font-style: normal;
+<<<<<<< HEAD
   src: url("/fonts/NunitoExtraBold.ttf");
+=======
+  src: url("/public/fonts/NunitoExtraBold.ttf");
+>>>>>>> 149918b39c59d0d938156bf789d8820ff62cf335
   font-family: "Nunito";
   font-weight: 800;
 }
 @font-face {
   font-display: swap;
   font-style: normal;
+<<<<<<< HEAD
   src: url("/fonts/NunitoItalicRegular.ttf");
+=======
+  src: url("/public/fonts/NunitoItalicRegular.ttf");
+>>>>>>> 149918b39c59d0d938156bf789d8820ff62cf335
   font-family: "Nunito";
   font-weight: 400;
 }
 @font-face {
   font-display: swap;
   font-style: normal;
+<<<<<<< HEAD
   src: url("/fonts/NunitoRegular.ttf");
+=======
+  src: url("/public/fonts/NunitoRegular.ttf");
+>>>>>>> 149918b39c59d0d938156bf789d8820ff62cf335
   font-family: "Nunito";
   font-weight: 400;
 }
 @font-face {
   font-display: swap;
   font-style: normal;
+<<<<<<< HEAD
   src: url("/fonts/NunitoSemiBold.ttf");
   font-family: "Nunito";
   font-weight: 600;
@@ -63,3 +84,9 @@
   font-family: "Noto Sans";
   font-weight: 400;
 }
+=======
+  src: url("/public/fonts/NunitoSemiBold.ttf");
+  font-family: "Nunito";
+  font-weight: 600;
+}
+>>>>>>> 149918b39c59d0d938156bf789d8820ff62cf335

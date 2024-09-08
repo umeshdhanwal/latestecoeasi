@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 const Home = () => {
   return (
@@ -27,3 +28,23 @@ const Home = () => {
   );
 };
 export default Home;
+=======
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./HomepageA";
+import BlogPost from "./BlogPost";
+import HomepageB from "./HomepageB";
+
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blogpost" element={<BlogPost />} />
+        <Route path="/homepageb" element={<HomepageB />} />
+      </Routes>
+    </Router>
+  );
+};
+
+export default Home;
+>>>>>>> 149918b39c59d0d938156bf789d8820ff62cf335
