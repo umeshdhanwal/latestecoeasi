@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-## umesh_s_application27
 
-Generated with ❤️ from [DhiWise](https://www.dhiwise.com)
 
-=======
->>>>>>> 149918b39c59d0d938156bf789d8820ff62cf335
 ## Description
 
 - This React application is built using [Vite](https://vitejs.dev/).

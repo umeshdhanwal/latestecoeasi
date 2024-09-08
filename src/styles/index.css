@@ -23,7 +23,6 @@ ul {
   list-style: none;
 }
 
-<<<<<<< HEAD
 .sliderstreamlin .alice-carousel__dots {
   display: flex;
   align-items: center;
@@ -35,15 +34,12 @@ ul {
   margin: auto;
 }
 
-=======
->>>>>>> 149918b39c59d0d938156bf789d8820ff62cf335
 .tab-panel--selected {
   animation-name: tabPanel;
   animation-duration: 300ms;
   animation-timing-function: linear;
 }
 
-<<<<<<< HEAD
 .slidereffortles .alice-carousel__dots {
   display: flex;
   align-items: center;
@@ -55,8 +51,6 @@ ul {
   margin: auto;
 }
 
-=======
->>>>>>> 149918b39c59d0d938156bf789d8820ff62cf335
 .pricingtable {
   th:first-child {
     border-top-left-radius: 5px;

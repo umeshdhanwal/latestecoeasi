@@ -3,21 +3,14 @@ import React from "react";
 const sizes = {
   textxs: "text-[7px] font-normal not-italic",
   texts: "text-[10px] font-normal not-italic",
-<<<<<<< HEAD
   textmd: "text-[18px] font-normal not-italic lg:text-[15px]",
-=======
->>>>>>> 149918b39c59d0d938156bf789d8820ff62cf335
   textlg: "text-[20px] font-normal not-italic lg:text-[17px]",
   textxl: "text-[22px] font-normal not-italic lg:text-[18px]",
   text2xl: "text-[24px] font-normal not-italic lg:text-[20px] md:text-[22px]",
   text3xl: "text-[25px] font-normal not-italic lg:text-[21px] md:text-[23px] sm:text-[21px]",
 };
 
-<<<<<<< HEAD
 const Text = ({ children, className = "", as, size = "textmd", ...restProps }) => {
-=======
-const Text = ({ children, className = "", as, size = "textxl", ...restProps }) => {
->>>>>>> 149918b39c59d0d938156bf789d8820ff62cf335
   const Component = as || "p";
 
   return (

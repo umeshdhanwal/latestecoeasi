@@ -24,11 +24,7 @@ export default function ESGCompliancePlatform({
         <Heading size="headinglg" as="h3" className="leading-[110%] sm:text-[25px]">
           {titleText}
         </Heading>
-<<<<<<< HEAD
         <Text size="textxl" as="p" className="leading-[157.4%] sm:text-[18px]">
-=======
-        <Text as="p" className="leading-[157.4%] sm:text-[18px]">
->>>>>>> 149918b39c59d0d938156bf789d8820ff62cf335
           {descriptionText}
         </Text>
       </div>
