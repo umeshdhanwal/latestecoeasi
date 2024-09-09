@@ -66,7 +66,7 @@ const HomeSlider = () => {
     if (!isHovering) {
       interval = setInterval(() => {
         handleNext();
-      }, 5000); // Auto-scroll every 5 seconds
+      }, 1000); // Auto-scroll every 5 seconds
     }
     return () => clearInterval(interval);
   }, [isHovering]);
