@@ -204,7 +204,7 @@ export default function BlogPostSection() {
                   </div>
                 </div>
                 <Heading size="headingmd" as="h6" className="text-[22px] font-extrabold text-gray-900 lg:text-[18px]">
-                  EcoEasi produces the Sustainability Report you require as a Supply Chain SME. Get a demo now.
+                  EcoEasi produces the Sustainability Report you require as a Supply Chain SME. Get a demo now .
                 </Heading>
               </div>
             </div>
