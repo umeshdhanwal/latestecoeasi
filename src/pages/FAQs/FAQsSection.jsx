@@ -17,7 +17,7 @@ const accordionData = [
     questionHeader: "Are all mid-sized entities in scope of CSRD?",
   },
   {
-    questionHeader: 'What is the pricing for EcoEasi products?"',
+    questionHeader: "What is the pricing for EcoEasi products?",
   },
   {
     questionHeader: "Why are EcoEasi products free or affordable for Supply Chain SMEs?",
