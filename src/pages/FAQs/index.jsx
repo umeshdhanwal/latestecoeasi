@@ -12,7 +12,7 @@ export default function FAQsPage() {
         <title>Frequently Asked Questions - EcoEasi ESG Solutions</title>
         <meta
           name="description"
-          content="Have questions about CSRD scope for SMEs or EcoEasi product pricing? Our FAQs provide answers to common queries on our affordable ESG reporting platform for Supply Chain SMEs."
+          content="Have questions about CSRD scope for SMEs or EcoEasi product pricing? Our FAQs provide answers to common queries on our affordable ESG reporting platform for Supply Chain SMEs. "
         />
       </Helmet>
       <div className="relative h-[2224px] w-full bg-white-a700 lg:h-auto md:h-auto">
