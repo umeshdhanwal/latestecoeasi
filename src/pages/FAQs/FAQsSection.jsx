@@ -11,17 +11,37 @@ import {
 
 const accordionData = [
   {
-    questionHeader: "Are non-listed and micro SMEs in the supply chain of mid-sized entities in scope of CSRD?",
+    questionHeader: "Are non-listed SMEs who are in the supply chain of mid-sized entities in scope of CSRD?",
+    answer: "Most SMEs are not in scope. Even though listed SMEs are. Non-listed supply chain SMEs are not directly in scope of CSRD, however given they are in the supply chain of entities that are in scope, then they are indirectly exposed as these entities who are in scope need to report on their value chain."
   },
   {
     questionHeader: "Are all mid-sized entities in scope of CSRD?",
+    answer: "It depends. While mid-sized subsidiaries of large multinationals and listed mid-sized companies are in scope (588 across Europe on Euronext alone), for other mid-sized companies it depends on the size criteria and/or their listing status to determine if they are in scope."
   },
   {
     questionHeader: "What is the pricing for EcoEasi products?",
+    answer: "Mid-sized entities pay for their EcoEasi products, while all Micro SME responses and small to medium sized companies on the platform will be free and will continue to be free after year 1 on a recurring basis. Only those larger SMEs (or listed SMEs) who have a significant number of employees, turnover and balance sheet size will be charged for using EcoEasi."
   },
   {
-    questionHeader: "Why are EcoEasi products free or affordable for Supply Chain SMEs?",
+    questionHeader: "Why are EcoEasi products free or affordable for most Supply Chain SMEs?",
+    answer: "EcoEasi provides products which connect and help mid-sized entities comply with their CSRD requirements and manage SMEs in their supply chain who complete the VSME modules aligned to CSRD. EcoEasi derives its revenue from these mid-sized customers and not from supply chain SMEs."
   },
+  {
+    questionHeader: "Can I use the EcoEasi's data gathered and reports for CSRD reporting?",
+    answer: "All EcoEasi's reports follow the CSRD rules set out for SMEs in the VSME reporting framework and while we are not an auditor or legal advisor we would anticipate these being acceptable and are obtaining a legal opinion to confirm."
+  },
+  {
+    questionHeader: "Can I use the assessment in the Sustainability Report for ESG reporting?",
+    answer: "The Sustainability Report Assessments carried out on value chain SMEs follow the CSRD rules set out in the VSME reporting framework and while EcoEasi is not a legal advisor or auditor, we would anticipate that it would be acceptable. We are obtaining a legal opinion to determine if the assessments can be used for reporting."
+  },
+  {
+    questionHeader: "How long does it take to complete an EcoEasi module?",
+    answer: "The EcoEasi modules equate to the VSME modules, and we expect that it will take up to an hour to complete an EcoEasi module. We will be able to share more accurate data as EcoEasi evolves."
+  },
+  {
+    questionHeader: "Are SME responses secure?",
+    answer: "All information that you share with EcoEasi is secure and safe. We will always ask if you wish to share data with anybody else, even if it is one of your suppliers. All data storage and responses are protected and in compliance with data protection regulations such as GDPR. EcoEasi will carry out regular security audits, enforce strict access controls, and encrypt data."
+  }
 ];
 
 export default function FAQsSection() {
@@ -91,10 +111,7 @@ export default function FAQsSection() {
                           as="p"
                           className="w-[90%] text-[22px] font-normal leading-[157.4%] text-gray-600 lg:text-[18px]"
                         >
-                          No. Even though listed SMEs are. Non listed and micro-SMEs are not directly in scope of CSRD,
-                          however given they are in the supply chain of entities that are in scope and if they are 1st
-                          tier suppliers, then they are indirectly exposed as these procuring entities need to report on
-                          their value chain’s ESG data.
+                          {d.answer}
                         </Text>
                       </div>
                     </AccordionItemPanel>

@@ -8,7 +8,7 @@ export default function PhotoAndDescriptionSection() {
       <div className="flex items-center justify-between gap-5 px-[260px] lg:px-8 md:flex-col md:px-5 sm:px-4">
         <div className="flex rounded-[60px] bg-gray-400">
           <Img
-            src="images/img_photo.png"
+            src="images/ecoeasi-mockup-2. 09.09.jpg"
             alt="Photo"
             className="h-[402px] w-full rounded-[60px] object-cover lg:h-auto md:h-auto"
           />

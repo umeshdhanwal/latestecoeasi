@@ -1,10 +1,13 @@
 import { Button, Text, Img } from "./..";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function Header({ ...props }) {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const checkIfMobile = () => {
@@ -28,27 +31,37 @@ export default function Header({ ...props }) {
       {['Home', 'About', 'Products', 'Blog', 'FAQs', 'Contact Us'].map((item) => (
         <li key={item}>
           {item === 'Products' ? (
-            <Link
-              to="pricing"
-              smooth={true}
-              duration={500}
+            <a
+              onClick={() => {
+                navigate('/');
+                setTimeout(() => {
+                  const pricingSection = document.getElementById('pricing');
+                  if (pricingSection) {
+                    pricingSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }, 100);
+              }}
               className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} cursor-pointer`}
             >
               <Text size="textmd" as="p" className="font-poppins text-[18px] font-medium text-gray-900">
                 {item}
               </Text>
-            </Link>
-          ) : item === 'Contact Us' ? (
-            <Link
-              to="footer"
-              smooth={true}
-              duration={500}
-              className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} cursor-pointer`}
+            </a>
+          ) : item === 'Home' ? (
+            <RouterLink to="/" className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''}`}>
+              <Text size="textmd" as="p" className="font-poppins text-[18px] font-medium text-gray-900">
+                {item}
+              </Text>
+            </RouterLink>
+          ) : item === 'FAQs' ? (
+            <RouterLink
+              to="/faqs"
+              className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''}`}
             >
               <Text size="textmd" as="p" className="font-poppins text-[18px] font-medium text-gray-900">
                 {item}
               </Text>
-            </Link>
+            </RouterLink>
           ) : (
             <a href="#" className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''}`}>
               <Text size="textmd" as="p" className="font-poppins text-[18px] font-medium text-gray-900">
@@ -64,11 +77,13 @@ export default function Header({ ...props }) {
   return (
     <header {...props} className={`${props.className} flex justify-center items-center py-14 md:py-5 sm:py-4`}>
       <div className="container-xs flex items-center justify-between gap-5 lg:px-5 md:px-5">
-        <Img
-          src="images/img_ecoeasi_logo_2.png"
-          alt="Logo Image"
-          className="h-[88px] w-[18%] object-contain md:w-full"
-        />
+        <RouterLink to="/">
+          <Img
+            src="images/img_ecoeasi_logo_2.png"
+            alt="Logo Image"
+            className="h-[120px] w-auto object-contain md:h-[100px] sm:h-[80px]"
+          />
+        </RouterLink>
         {isMobile ? (
           <>
             <button onClick={toggleDrawer} className="text-gray-900">
