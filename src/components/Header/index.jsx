@@ -41,24 +41,24 @@ export default function Header({ ...props }) {
                   }
                 }, 100);
               }}
-              className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} cursor-pointer`}
+              className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} cursor-pointer ${isMobile ? 'text-white' : ''}`}
             >
-              <Text size="textmd" as="p" className="font-poppins text-[18px] font-medium text-gray-900">
+              <Text size="textmd" as="p" className={`font-poppins text-[18px] font-medium ${isMobile ? 'text-white' : 'text-gray-900'}`}>
                 {item}
               </Text>
             </a>
           ) : item === 'Home' ? (
-            <RouterLink to="/" className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''}`}>
-              <Text size="textmd" as="p" className="font-poppins text-[18px] font-medium text-gray-900">
+            <RouterLink to="/" className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} ${isMobile ? 'text-white' : ''}`}>
+              <Text size="textmd" as="p" className={`font-poppins text-[18px] font-medium ${isMobile ? 'text-white' : 'text-gray-900'}`}>
                 {item}
               </Text>
             </RouterLink>
           ) : item === 'FAQs' ? (
             <RouterLink
               to="/faqs"
-              className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''}`}
+              className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} ${isMobile ? 'text-white' : ''}`}
             >
-              <Text size="textmd" as="p" className="font-poppins text-[18px] font-medium text-gray-900">
+              <Text size="textmd" as="p" className={`font-poppins text-[18px] font-medium ${isMobile ? 'text-white' : 'text-gray-900'}`}>
                 {item}
               </Text>
             </RouterLink>
@@ -80,15 +80,15 @@ export default function Header({ ...props }) {
                   }
                 }
               }}
-              className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} cursor-pointer`}
+              className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} cursor-pointer ${isMobile ? 'text-white' : ''}`}
             >
-              <Text size="textmd" as="p" className="font-poppins text-[18px] font-medium text-gray-900">
+              <Text size="textmd" as="p" className={`font-poppins text-[18px] font-medium ${isMobile ? 'text-white' : 'text-gray-900'}`}>
                 {item}
               </Text>
             </a>
           ) : (
-            <a href="#" className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''}`}>
-              <Text size="textmd" as="p" className="font-poppins text-[18px] font-medium text-gray-900">
+            <a href="#" className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} ${isMobile ? 'text-white' : ''}`}>
+              <Text size="textmd" as="p" className={`font-poppins text-[18px] font-medium ${isMobile ? 'text-white' : 'text-gray-900'}`}>
                 {item}
               </Text>
             </a>
@@ -115,9 +115,9 @@ export default function Header({ ...props }) {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
-            <div className={`fixed inset-y-0 right-0 z-50 w-64 bg-white shadow-lg transform ${isDrawerOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out`}>
+            <div className={`fixed inset-y-0 right-0 z-50 w-64 bg-purple-100 shadow-lg transform ${isDrawerOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out`}>
               <div className="p-5">
-                <button onClick={toggleDrawer} className="mb-5 text-gray-900">
+                <button onClick={toggleDrawer} className="mb-5 text-purple-800">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
@@ -125,7 +125,7 @@ export default function Header({ ...props }) {
                 <NavItems />
                 <Button 
                   shape="round" 
-                  className="mt-5 min-w-[154px] !bg-white rounded-[36px] px-[34px] font-bold sm:px-4 text-gray-900 border border-gray-900 hover:bg-green-500 hover:text-white hover:border-green-500 transition-colors duration-300"
+                  className="mt-5 min-w-[154px] !bg-purple-800 rounded-[36px] px-[34px] font-bold sm:px-4 text-white border border-purple-800 hover:bg-purple-600 hover:border-purple-600 transition-colors duration-300"
                 >
                   Login
                 </Button>
