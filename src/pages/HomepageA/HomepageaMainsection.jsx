@@ -5,7 +5,7 @@ import React, { Suspense } from "react";
 const supportOptionsList = [
   { callSupportText: "Call support for the Pro Package", manualText: "Manual", automatedText: "Automated" },
   { callSupportText: "% SME ESG Data Collection Rate", manualText: "<30-40%", automatedText: "<90%" },
-  { callSupportText: "Annual Cost", manualText: ">€50,000", automatedText: "€4,000" },
+  { callSupportText: "Annual Cost", manualText: ">€50,000", automatedText: "On Request" },
 ];
 
 export default function HomepageaMainsection() {
