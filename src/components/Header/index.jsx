@@ -1,13 +1,13 @@
 import { Button, Text, Img } from "./..";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { Link as RouterLink } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import { Link as RouterLink, useNavigate, useLocation } from 'react-router-dom';
 
 export default function Header({ ...props }) {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const checkIfMobile = () => {
@@ -62,6 +62,30 @@ export default function Header({ ...props }) {
                 {item}
               </Text>
             </RouterLink>
+          ) : item === 'Contact Us' ? (
+            <a
+              onClick={() => {
+                if (location.pathname !== '/') {
+                  navigate('/');
+                  setTimeout(() => {
+                    const footerSection = document.getElementById('footer');
+                    if (footerSection) {
+                      footerSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }, 100);
+                } else {
+                  const footerSection = document.getElementById('footer');
+                  if (footerSection) {
+                    footerSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }
+              }}
+              className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} cursor-pointer`}
+            >
+              <Text size="textmd" as="p" className="font-poppins text-[18px] font-medium text-gray-900">
+                {item}
+              </Text>
+            </a>
           ) : (
             <a href="#" className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''}`}>
               <Text size="textmd" as="p" className="font-poppins text-[18px] font-medium text-gray-900">
