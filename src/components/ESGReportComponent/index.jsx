@@ -9,7 +9,7 @@ export default function ESGReportComponent({
   ),
   subheadingText = "For Mid-Sized buyers who want to obtain and analyse ESG reportable data from their SME suppliers.",
   priceText = "Price on Application",
-  billingText = "Billed as €292 per month",
+  billingText = "Billed per month",
   descriptionText,
   buttonText = "Get Started",
   isPro = false,
@@ -22,7 +22,7 @@ export default function ESGReportComponent({
       </>
     ),
     priceText: "Price on Application",
-    billingText: "Billed as €375 per month",
+    billingText: "Billed per month",
   };
 
   const content = isPro ? proContent : { headingText, priceText, billingText };
