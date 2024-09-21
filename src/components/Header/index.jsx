@@ -41,24 +41,33 @@ export default function Header({ ...props }) {
                   }
                 }, 100);
               }}
-              className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} cursor-pointer ${isMobile ? 'text-white' : ''}`}
+              className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} cursor-pointer ${isMobile ? 'text-purple-800' : ''}`}
             >
-              <Text size="textmd" as="p" className={`font-poppins text-[18px] font-medium ${isMobile ? 'text-white' : 'text-gray-900'}`}>
+              <Text size="textmd" as="p" className={`font-poppins text-[18px] font-medium ${isMobile ? 'text-purple-800' : 'text-gray-900'}`}>
                 {item}
               </Text>
             </a>
           ) : item === 'Home' ? (
-            <RouterLink to="/" className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} ${isMobile ? 'text-white' : ''}`}>
-              <Text size="textmd" as="p" className={`font-poppins text-[18px] font-medium ${isMobile ? 'text-white' : 'text-gray-900'}`}>
+            <RouterLink to="/" className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} ${isMobile ? 'text-purple-800' : ''}`}>
+              <Text size="textmd" as="p" className={`font-poppins text-[18px] font-medium ${isMobile ? 'text-purple-800' : 'text-gray-900'}`}>
                 {item}
               </Text>
             </RouterLink>
           ) : item === 'FAQs' ? (
             <RouterLink
               to="/faqs"
-              className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} ${isMobile ? 'text-white' : ''}`}
+              className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} ${isMobile ? 'text-purple-800' : ''}`}
             >
-              <Text size="textmd" as="p" className={`font-poppins text-[18px] font-medium ${isMobile ? 'text-white' : 'text-gray-900'}`}>
+              <Text size="textmd" as="p" className={`font-poppins text-[18px] font-medium ${isMobile ? 'text-purple-800' : 'text-gray-900'}`}>
+                {item}
+              </Text>
+            </RouterLink>
+          ) : item === 'Blog' ? (
+            <RouterLink
+              to="/blogpost"
+              className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} ${isMobile ? 'text-purple-800' : ''}`}
+            >
+              <Text size="textmd" as="p" className={`font-poppins text-[18px] font-medium ${isMobile ? 'text-purple-800' : 'text-gray-900'}`}>
                 {item}
               </Text>
             </RouterLink>
@@ -80,15 +89,15 @@ export default function Header({ ...props }) {
                   }
                 }
               }}
-              className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} cursor-pointer ${isMobile ? 'text-white' : ''}`}
+              className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} cursor-pointer ${isMobile ? 'text-purple-800' : ''}`}
             >
-              <Text size="textmd" as="p" className={`font-poppins text-[18px] font-medium ${isMobile ? 'text-white' : 'text-gray-900'}`}>
+              <Text size="textmd" as="p" className={`font-poppins text-[18px] font-medium ${isMobile ? 'text-purple-800' : 'text-gray-900'}`}>
                 {item}
               </Text>
             </a>
           ) : (
-            <a href="#" className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} ${isMobile ? 'text-white' : ''}`}>
-              <Text size="textmd" as="p" className={`font-poppins text-[18px] font-medium ${isMobile ? 'text-white' : 'text-gray-900'}`}>
+            <a href="#" className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} ${isMobile ? 'text-purple-800' : ''}`}>
+              <Text size="textmd" as="p" className={`font-poppins text-[18px] font-medium ${isMobile ? 'text-purple-800' : 'text-gray-900'}`}>
                 {item}
               </Text>
             </a>
