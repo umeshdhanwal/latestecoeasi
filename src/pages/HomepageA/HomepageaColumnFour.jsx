@@ -1,5 +1,6 @@
 import { Heading, Text, Button } from "../../components";
 import React from "react";
+import { Link } from 'react-router-dom';  // Add this import
 
 export default function HomepageaColumnFour() {
   return (
@@ -39,11 +40,11 @@ export default function HomepageaColumnFour() {
                 framework under CSRD which facilitates supply chain SMEs in disclosing their relevant ESG information
                 while showcasing their ESG credentials.
               </Text>
-              <a href="#" className="mb-1 lg:text-[15px]">
+              <Link to="/blogpost" className="mb-1 lg:text-[15px]">
                 <Heading size="headingxs" as="h6" className="text-[18px] font-bold text-deep_purple-a400 underline">
                   Read More
                 </Heading>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
