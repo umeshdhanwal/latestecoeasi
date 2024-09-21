@@ -1,8 +1,11 @@
 import { Heading, Text, Button } from "../../components";
 import React from "react";
 import { Link } from 'react-router-dom';  // Add this import
+import { useNavigate } from 'react-router-dom';
 
 export default function HomepageaColumnFour() {
+  const navigate = useNavigate();
+  
   return (
     <div className="mt-[214px] flex flex-col items-center self-stretch">
       <div className="container-xs flex flex-col items-center gap-5 lg:px-5 md:px-5">
@@ -40,11 +43,17 @@ export default function HomepageaColumnFour() {
                 framework under CSRD which facilitates supply chain SMEs in disclosing their relevant ESG information
                 while showcasing their ESG credentials.
               </Text>
-              <Link to="/blogpost" className="mb-1 lg:text-[15px]">
+              <a
+                onClick={() => {
+                  navigate('/blogpost');
+                  window.scrollTo(0, 0);
+                }}
+                className="mb-1 lg:text-[15px] cursor-pointer"
+              >
                 <Heading size="headingxs" as="h6" className="text-[18px] font-bold text-deep_purple-a400 underline">
                   Read More
                 </Heading>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
