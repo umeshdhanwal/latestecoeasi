@@ -53,6 +53,12 @@ export default function Header({ ...props }) {
                 {item}
               </Text>
             </RouterLink>
+          ) : item === 'About' ? (
+            <RouterLink to="/Aboutus" className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} ${isMobile ? 'text-purple-800' : ''}`}>
+              <Text size="textmd" as="p" className={`font-poppins text-[18px] font-medium ${isMobile ? 'text-purple-800' : 'text-gray-900'}`}>
+                {item}
+              </Text>
+            </RouterLink>
           ) : item === 'FAQs' ? (
             <RouterLink
               to="/faqs"

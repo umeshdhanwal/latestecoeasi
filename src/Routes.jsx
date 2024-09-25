@@ -7,6 +7,7 @@ import FAQs from "pages/FAQs";
 import BlogPost from "pages/BlogPost";
 import BackgroundInformationPage from "pages/BackgroundInformationPage";
 import HomepageA from "pages/HomepageA";
+import AboutusPage from "pages/Aboutus"; // Adjusted import statement
 
 const ProjectRoutes = () => {
   let element = useRoutes([
@@ -23,6 +24,10 @@ const ProjectRoutes = () => {
     {
       path: "blogpost",
       element: <BlogPost />,
+    },
+    {
+      path: "aboutus", // Route for About Us
+      element: <AboutusPage />, // Use the correct component
     },
     {
       path: "backgroundinformationpage",
