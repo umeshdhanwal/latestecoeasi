@@ -10,10 +10,12 @@ import PhotoAndDescriptionSection from "./PhotoAndDescriptionSection";
 import PricingOptionsSection from "./PricingOptionsSection";
 import Group368Page from "../Group368";
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 export default function HomepageAPage() {
   const [sliderState, setSliderState] = React.useState(0);
   const sliderRef = React.useRef(null);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -73,11 +75,13 @@ export default function HomepageAPage() {
                             size="lg"
                             shape="round"
                             className="min-w-[246px] rounded-[34px] px-[34px] font-bold sm:px-4 
-                               bg-white text-grey-a400 border border-deep_purple-a400
-                               hover:bg-deep_purple-a400 hover:!text-white
-                               transition-colors duration-300"
+                             bg-white text-grey-a400 border border-deep_purple-a400
+                             hover:bg-deep_purple-a400 hover:!text-white
+                             transition-colors duration-300 flex flex-row items-center justify-center text-center 
+                             cursor-pointer whitespace-nowrap h-[68px] text-[18px]"
+                            onClick={() => navigate('/sustainabilityreportoption')}
                           >
-                            SMEs get started
+                            SMEs Get Started
                           </Button>
                         </div>
                         <div className="flex w-[34%] flex-col gap-[34px] rounded-[40px] bg-white-a700 px-8 py-[86px] lg:py-8 md:w-full md:py-5 sm:p-4">

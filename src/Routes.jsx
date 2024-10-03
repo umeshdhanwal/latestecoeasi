@@ -8,6 +8,7 @@ import BlogPost from "pages/BlogPost";
 import BackgroundInformationPage from "pages/BackgroundInformationPage";
 import HomepageA from "pages/HomepageA";
 import AboutusPage from "pages/Aboutus"; // Adjusted import statement
+import SustainabilityReportOptionPage from 'pages/SustainabilityReportOption';
 
 const ProjectRoutes = () => {
   let element = useRoutes([
@@ -36,6 +37,10 @@ const ProjectRoutes = () => {
     {
       path: "/",
       element: <HomepageA />,
+    },
+    {
+      path: "/sustainabilityreportoption",
+      element: <SustainabilityReportOptionPage />,
     },
   ]);
 
