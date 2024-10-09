@@ -54,7 +54,7 @@ export default function Header({ ...props }) {
               </Text>
             </RouterLink>
           ) : item === 'About' ? (
-            <RouterLink to="/Aboutus" className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} ${isMobile ? 'text-purple-800' : ''}`}>
+            <RouterLink to="/about" className={`lg:text-[15px] ${isMobile ? 'block py-2' : ''} ${isMobile ? 'text-purple-800' : ''}`}>
               <Text size="textmd" as="p" className={`font-poppins text-[18px] font-medium ${isMobile ? 'text-purple-800' : 'text-gray-900'}`}>
                 {item}
               </Text>
@@ -139,6 +139,7 @@ export default function Header({ ...props }) {
                 </button>
                 <NavItems />
                 <Button 
+                  onClick={() => navigate('/questionnaire')}
                   shape="round" 
                   className="mt-5 min-w-[154px] !bg-purple-800 rounded-[36px] px-[34px] font-bold sm:px-4 text-white border border-purple-800 hover:bg-purple-600 hover:border-purple-600 transition-colors duration-300"
                 >
@@ -155,6 +156,7 @@ export default function Header({ ...props }) {
             <Button 
               shape="round" 
               className="min-w-[154px] !bg-white rounded-[36px] px-[34px] font-bold sm:px-4 text-gray-900 border border-gray-900 hover:bg-green-500 hover:text-white hover:border-green-500 transition-colors duration-300"
+              onClick={() => navigate('/questionnaire')}
             >
               Login
             </Button>

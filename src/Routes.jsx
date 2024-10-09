@@ -7,8 +7,9 @@ import FAQs from "pages/FAQs";
 import BlogPost from "pages/BlogPost";
 import BackgroundInformationPage from "pages/BackgroundInformationPage";
 import HomepageA from "pages/HomepageA";
-import AboutusPage from "pages/Aboutus"; // Adjusted import statement
-import SustainabilityReportOptionPage from 'pages/SustainabilityReportOption';
+import AboutusPage from "pages/Aboutus"; // Import the AboutusPage component
+import QuestionnairePage from "pages/QuestionnairePage"; // Import the QuestionnairePage component
+
 
 const ProjectRoutes = () => {
   let element = useRoutes([
@@ -27,10 +28,6 @@ const ProjectRoutes = () => {
       element: <BlogPost />,
     },
     {
-      path: "aboutus", // Route for About Us
-      element: <AboutusPage />, // Use the correct component
-    },
-    {
       path: "backgroundinformationpage",
       element: <BackgroundInformationPage />,
     },
@@ -39,8 +36,12 @@ const ProjectRoutes = () => {
       element: <HomepageA />,
     },
     {
-      path: "/sustainabilityreportoption",
-      element: <SustainabilityReportOptionPage />,
+      path: "about", // Add the route for the About page
+      element: <AboutusPage />,
+    },
+    {
+      path: "questionnaire", // Add the route for the Questionnaire page
+      element: <QuestionnairePage />,
     },
   ]);
 
