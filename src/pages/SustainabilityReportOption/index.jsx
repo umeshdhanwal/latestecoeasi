@@ -86,7 +86,7 @@ export default function SustainabilityReportOptionPage() {
                     </div>
                   </div>
                   <Heading size="heading5xl" as="h6" className="mt-[26px] text-[75px] font-extrabold text-gray-900 lg:text-[48px] md:text-[48px]">
-                    Free
+                    Low Cost
                   </Heading>
                   <Button 
                     shape="round" 

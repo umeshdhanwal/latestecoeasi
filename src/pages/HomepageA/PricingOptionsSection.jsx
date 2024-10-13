@@ -87,7 +87,7 @@ export default function PricingOptionsSection() {
                       as="h1"
                       className="text-[40px] font-extrabold text-gray-900 lg:text-[34px] md:text-[34px] sm:text-[32px]"
                     >
-                      Free!
+                      Low Cost!
                     </Heading>
                     <div className="h-px w-full self-stretch bg-blue_gray-100" />
                   </div>
