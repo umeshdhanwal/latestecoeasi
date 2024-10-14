@@ -9,7 +9,6 @@ import BackgroundInformationPage from "pages/BackgroundInformationPage";
 import HomepageA from "pages/HomepageA";
 import AboutusPage from "pages/Aboutus"; // Import the AboutusPage component
 import QuestionnairePage from "pages/QuestionnairePage"; // Import the QuestionnairePage component
-import SustainabilityReportOption from "pages/SustainabilityReportOption";
 
 
 const ProjectRoutes = () => {
@@ -43,10 +42,6 @@ const ProjectRoutes = () => {
     {
       path: "questionnaire", // Add the route for the Questionnaire page
       element: <QuestionnairePage />,
-    },
-    {
-      path: "sustainabilityreportoption",
-      element: <SustainabilityReportOption />,
     },
   ]);
 

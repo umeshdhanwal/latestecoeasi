@@ -1,10 +1,10 @@
 import { Helmet } from "react-helmet";
-import { Text, Heading, Img } from "../../components";
+import { Img, Heading, Text } from "../../components";
+import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import AboutUsSection from "./AboutUsSection";
 import AboutUsSection1 from "./AboutUsSection1";
 import AboutUsSection2 from "./AboutUsSection2";
-import Footer from "../../components/Footer"; // Import the Footer component
 import React from "react";
 
 export default function AboutusPage() {
@@ -17,22 +17,18 @@ export default function AboutusPage() {
           content="Learn about EcoEasi's mission to democratize ESG reporting with AI technology. Meet our team of experts and discover how we empower SMEs and mid-sized companies in their sustainability journey."
         />
       </Helmet>
-      <div className="w-full bg-white-a700">
-        <div>
-          <Img
-            src="images/img_background_patterns.svg"
-            alt="Background Image"
-            className="h-[808px] w-full lg:h-auto md:h-auto"
-          />
-          <div className="relative mt-[-808px] flex flex-col gap-10">
-            <div>
-              <Header />
-            </div>
+      <div className="relative w-full bg-white-a700">
+        <Img
+          src="images/img_background_patterns.svg"
+          alt="Background Image"
+          className="h-[808px] w-full lg:h-auto md:h-auto"
+        />
+        <div className="absolute inset-0 flex flex-col">
+          <Header className="absolute left-0 right-0 top-0 m-auto w-full max-w-[1402px] z-10 lg:px-5 md:px-5" />
+          <div className="mt-[120px] flex-1">
             <div className="flex flex-col gap-14 sm:gap-7">
-              {/* About Us Section */}
               <AboutUsSection />
               <div className="flex flex-col items-center gap-[72px] py-9 lg:gap-[72px] md:gap-[54px] sm:gap-9 sm:py-4">
-                {/* About Us Section 1 */}
                 <AboutUsSection1 />
                 <div className="container-xs lg:px-5 md:px-5">
                   <div className="flex items-start justify-between gap-5 md:flex-col">
@@ -127,9 +123,7 @@ export default function AboutusPage() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-center">
-              <Footer /> {/* Replace the footer section with the Footer component */}
-            </div>
+            <Footer className="mt-[120px]" />
           </div>
         </div>
       </div>
