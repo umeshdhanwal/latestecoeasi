@@ -5,6 +5,7 @@ import TextArea from "../components/TextArea"; // Add this line
 import Header from "../components/Header";
 import ProgressOverviewSection from "../components/ProgressOverviewSection";
 import GenderBreakdownBar from '../components/GenderBreakdownBar';  // Add this import at the top of the file
+import { useNavigate } from 'react-router-dom';
 
 const QuestionnairePage = () => {
   const [question, setQuestion] = useState(null);
@@ -13,6 +14,7 @@ const QuestionnairePage = () => {
   const [totalQuestions, setTotalQuestions] = useState(0);
   const [answeredQuestions, setAnsweredQuestions] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
   const fetchTotalQuestions = async () => {
     try {
@@ -271,6 +273,12 @@ const QuestionnairePage = () => {
     return Math.round((answeredQuestions / totalQuestions) * 100) || 0;
   };
 
+  const handleLogout = () => {
+    console.log('Logout clicked');
+    // Implement logout logic here
+    navigate('/');
+  };
+
   return (
     <>
       <Helmet>
@@ -278,7 +286,7 @@ const QuestionnairePage = () => {
         <meta name="description" content="Participate in the EcoEasi questionnaire to provide your insights." />
       </Helmet>
       <div className="flex w-full flex-col items-center bg-white shadow-xs">
-        <Header />
+        <Header simplified className="w-full" onLogout={() => navigate('/')} />
         <ProgressOverviewSection progress={calculateProgress()} />
         {isLoading ? (
           <div className="flex items-center justify-center h-64">
