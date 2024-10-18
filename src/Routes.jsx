@@ -10,7 +10,7 @@ import HomepageA from "pages/HomepageA";
 import AboutusPage from "pages/Aboutus"; // Import the AboutusPage component
 import QuestionnairePage from "pages/QuestionnairePage"; // Import the QuestionnairePage component
 import SustainabilityReportOption from "pages/SustainabilityReportOption";
-
+import LoginPage from "./pages/Login";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
@@ -47,6 +47,10 @@ const ProjectRoutes = () => {
     {
       path: "sustainabilityreportoption",
       element: <SustainabilityReportOption />,
+    },
+    {
+      path: "login",
+      element: <LoginPage />,
     },
   ]);
 

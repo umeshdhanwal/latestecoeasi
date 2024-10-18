@@ -167,9 +167,9 @@ export default function Header({ className = "", simplified = false, onLogout, .
                   </button>
                   <NavItems />
                   <Button 
-                    onClick={() => navigate('/questionnaire')}
+                    onClick={() => navigate('/login')}
                     shape="round" 
-                    className="mt-5 min-w-[154px] !bg-purple-800 rounded-[36px] px-[34px] font-bold sm:px-4 text-white border border-purple-800 hover:bg-purple-600 hover:border-purple-600 transition-colors duration-300"
+                    className="mt-5 min-w-[154px] !bg-white rounded-[36px] px-[34px] font-bold sm:px-4 text-gray-900 border border-gray-900 hover:bg-green-500 hover:text-white hover:border-green-500 transition-colors duration-300"
                   >
                     Login
                   </Button>
@@ -184,7 +184,7 @@ export default function Header({ className = "", simplified = false, onLogout, .
               <Button 
                 shape="round" 
                 className="min-w-[154px] !bg-white rounded-[36px] px-[34px] font-bold sm:px-4 text-gray-900 border border-gray-900 hover:bg-green-500 hover:text-white hover:border-green-500 transition-colors duration-300"
-                onClick={() => navigate('/questionnaire')}
+                onClick={() => navigate('/login')}
               >
                 Login
               </Button>
