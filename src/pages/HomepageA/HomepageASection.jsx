@@ -18,7 +18,7 @@ const homepageFeaturesGrid = [
     iconImage: "images/img_laptop.svg",
     titleText: "Your ESG One-Stop Shop",
     descriptionText:
-      "EcoEasi products will offer SMEs the ability to add to their suite of documents, e.g. an ESG assessment risk policy incorporating your material risk while supporting your detailed material risk assessment.",
+      "EcoEasi products will offer SMEs the ability to add to their suite of documents, e.g. an ESG assessment risk policy incorporating your material risk while supporting your double material risk assessment.",
   },
   {
     iconImage: "images/img_play.svg",

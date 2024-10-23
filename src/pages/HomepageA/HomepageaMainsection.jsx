@@ -5,7 +5,7 @@ import React, { Suspense } from "react";
 const supportOptionsList = [
   { callSupportText: "Call support for the Pro Package", manualText: "Manual", automatedText: "Automated" },
   { callSupportText: "% SME ESG Data Collection Rate", manualText: "<30-40%", automatedText: "<90%" },
-  { callSupportText: "Annual Cost", manualText: ">€50,000", automatedText: "On Request" },
+  { callSupportText: "Cost", manualText: ">€50,000", automatedText: "On Request" },
 ];
 
 export default function HomepageaMainsection() {
@@ -147,7 +147,7 @@ export default function HomepageaMainsection() {
                 </div>
                 <div className="flex justify-between rounded-[5px] bg-white-a700 p-2.5">
                   <Text size="textmd" as="p" className="text-[18px] font-normal text-gray-600 lg:text-[15px] w-[60%]">
-                    Supplier Materiality Assesment & Report (if applicable)
+                  Double Materiality Assessment (if applicable) & VSME Report
                   </Text>
                   <div className="flex justify-between w-[40%]">
                   <Text size="textmd" as="p" className="text-[18px] font-normal text-gray-600 lg:text-[15px] w-[48%] text-right pr-40 md:pr-0">
@@ -160,7 +160,7 @@ export default function HomepageaMainsection() {
                 </div>
                 <div className="flex justify-between rounded-[5px] bg-gray-50_01 p-2.5">
                   <Text size="textmd" as="p" className="text-[18px] font-normal text-gray-600 lg:text-[15px] w-[60%]">
-                    Annual Cost
+                    Cost
                   </Text>
                   <div className="flex justify-between w-[40%]">
                     <Text

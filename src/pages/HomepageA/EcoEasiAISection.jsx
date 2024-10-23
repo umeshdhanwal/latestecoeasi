@@ -19,7 +19,7 @@ export default function EcoEasiAISection() {
               as="p"
               className="mt-4 w-[70%] text-[22px] font-normal leading-[157.4%] text-gray-600 lg:w-full lg:text-[18px] md:w-full"
             >
-              EcoEasi uses AI to support supplier SMEsa and Mid-Sized Buyers in not just sourcing ESG data and
+              EcoEasi uses AI to support supplier SMEs and Mid-Sized Buyers in not just sourcing ESG data and
               prepopulating the answers to the VSME module questions (aligned to CSRD) but also scoring and assessing
               the results. In addition, each individual supplier report is reviewed and an overall report is provided to
               the buyer identifying scope for improvements, scoring and benchmarking.
