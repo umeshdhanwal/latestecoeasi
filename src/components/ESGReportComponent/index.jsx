@@ -68,9 +68,9 @@ export default function ESGReportComponent({
           <>
             Ability to select questionnaires which generate ESG Assessments & Reports
             <br /><br />
-            Invitations can be sent by EcoEasi to <span className="font-bold text-deep_purple-a400">unlimited Supply Chain SMEs</span>
+            Invitations can be sent by EcoEasi to <span className="font-bold text-deep_purple-a400">unlimited supply chain SMEs</span>
             <br /><br />
-            <span className="font-bold text-deep_purple-a400">Unlimited ESG Assessments & Reports</span> will be reviewed and scope for improvements identified
+            <span className="font-bold text-deep_purple-a400">Unlimited ESG Assessments & supply chain Reports</span> will be reviewed and scope for improvements identified
             <br /><br />
             Call support with a specialist consultant
             <br /><br />
@@ -84,13 +84,13 @@ export default function ESGReportComponent({
               Invitations can be sent by EcoEasi to
               <br />
             </span>
-            <span className="font-bold text-deep_purple-a400">30 Supply</span>
+            <span className="font-bold text-deep_purple-a400">30 supply chain SMEs</span>
             <span className="text-gray-600">
-              &nbsp;Chain SME
+              &nbsp;
               <br /><br />
             </span>
             <span className="font-bold text-deep_purple-a400">
-              30 ESG Assessments & Reports will be reviewed and scope for improvements identified
+              30 ESG Assessments & supply chain Reports will be reviewed and scope for improvements identified
               <br /><br />
               AI support
             </span>

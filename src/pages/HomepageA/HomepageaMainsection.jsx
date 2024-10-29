@@ -68,7 +68,7 @@ export default function HomepageaMainsection() {
               <div className="flex flex-col gap-2.5 bg-white-a700 p-3">
                 <div className="flex justify-between rounded-[5px] bg-gray-50_01 p-2.5">
                   <Text size="textmd" as="p" className="text-[18px] font-normal text-gray-600 lg:text-[15px] w-[60%]">
-                    CSRD Report in accordance with the Voluntary{" "}
+                  ESG Assessments & supply chain Report{" "}
                   </Text>
                   <div className="flex justify-between w-[40%]">
                     <Text size="textmd" as="p" className="text-[18px] font-normal text-gray-600 lg:text-[15px] w-[48%] text-right pr-40 md:pr-0">
