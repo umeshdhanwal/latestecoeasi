@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Input, Button, Text, Heading } from "../../components";
 import SignupModal from '../../components/SignupModal';
 import ForgotPasswordModal from '../../components/ForgotPasswordModal';
+import ModifyAccountModal from '../../components/ModifyAccountModal';
 import Header from "../../components/Header";
 
 const LoginPage = () => {
@@ -11,6 +12,7 @@ const LoginPage = () => {
   const [password, setPassword] = useState('');
   const [showSignup, setShowSignup] = useState(false);
   const [showForgotPassword, setShowForgotPassword] = useState(false);
+  const [showModifyAccount, setShowModifyAccount] = useState(false);
   const [loginError, setLoginError] = useState(false);
   const [shake, setShake] = useState(false);
   const navigate = useNavigate();
@@ -110,13 +112,20 @@ const LoginPage = () => {
             )}
 
             <div className="flex items-center justify-between">
-              <div className="text-sm">
+              <div className="text-sm flex gap-4">
                 <a
                   href="#"
                   className="font-medium text-indigo-600 hover:text-indigo-500"
                   onClick={() => setShowForgotPassword(true)}
                 >
                   Forgot your password?
+                </a>
+                <a
+                  href="#"
+                  className="font-medium text-indigo-600 hover:text-indigo-500"
+                  onClick={() => setShowModifyAccount(true)}
+                >
+                  Modify Account
                 </a>
               </div>
             </div>
@@ -152,6 +161,7 @@ const LoginPage = () => {
       </div>
       {showSignup && <SignupModal onClose={() => setShowSignup(false)} />}
       {showForgotPassword && <ForgotPasswordModal onClose={() => setShowForgotPassword(false)} />}
+      {showModifyAccount && <ModifyAccountModal onClose={() => setShowModifyAccount(false)} />}
     </>
   );
 };
