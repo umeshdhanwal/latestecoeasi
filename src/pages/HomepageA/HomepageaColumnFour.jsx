@@ -28,7 +28,7 @@ export default function HomepageaColumnFour() {
           <div className="mb-1.5 flex flex-col gap-3">
             <div className="flex flex-col items-start gap-[18px]">
               <Text size="textmd" as="p" className="text-[18px] font-normal text-gray-600 lg:text-[15px]">
-                November 15, 2024
+                November 7, 2024
               </Text>
               <Heading
                 as="h1"
