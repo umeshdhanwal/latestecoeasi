@@ -15,6 +15,7 @@ import { useNavigate } from 'react-router-dom';
 export default function HomepageAPage() {
   const [sliderState, setSliderState] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(true);
+  const [isTouching, setIsTouching] = useState(false);
   const sliderRef = React.useRef(null);
   const navigate = useNavigate();
 
@@ -23,23 +24,29 @@ export default function HomepageAPage() {
     return window.innerWidth <= 768;
   };
 
-  // Handle any interaction on mobile
-  const handleMobileInteraction = (e) => {
+  // Handle touch start
+  const handleTouchStart = () => {
     if (isMobile()) {
       setIsAutoPlay(false);
+      setIsTouching(true);
     }
   };
 
+  // Handle touch end
+  const handleTouchEnd = () => {
+    setIsTouching(false);
+  };
+
   useEffect(() => {
-    // Add touch event listeners for mobile
-    document.addEventListener('touchstart', handleMobileInteraction);
-    document.addEventListener('touchmove', handleMobileInteraction);
-    
-    // Cleanup
-    return () => {
-      document.removeEventListener('touchstart', handleMobileInteraction);
-      document.removeEventListener('touchmove', handleMobileInteraction);
-    };
+    if (isMobile()) {
+      document.addEventListener('touchstart', handleTouchStart);
+      document.addEventListener('touchend', handleTouchEnd);
+      
+      return () => {
+        document.removeEventListener('touchstart', handleTouchStart);
+        document.removeEventListener('touchend', handleTouchEnd);
+      };
+    }
   }, []);
 
   return (
@@ -55,7 +62,7 @@ export default function HomepageAPage() {
         <Header className="absolute left-0 right-0 top-0 m-auto w-full max-w-[1402px] z-10 lg:px-5 md:px-5" />
         <div className="relative h-[1042px] content-center lg:h-auto md:h-auto">
           <Slider
-            autoPlay={isAutoPlay}
+            autoPlay={isAutoPlay && !isTouching}
             autoPlayInterval={2000}
             responsive={{ 0: { items: 1 } }}
             renderDotsItem={(props) => {
