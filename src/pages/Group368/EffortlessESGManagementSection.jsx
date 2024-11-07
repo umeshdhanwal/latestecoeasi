@@ -1,7 +1,10 @@
 import { Img, Text, Heading, Button } from "../../components";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function EffortlessESGManagementSection() {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="mt-[204px] w-full">
@@ -32,8 +35,9 @@ export default function EffortlessESGManagementSection() {
                      bg-white text-grey-a400 border-4 border-green-a400
                      hover:bg-green-800 hover:text-white hover:border-green-800
                      transition-colors duration-300"
+                  onClick={() => navigate('/login')}
                 >
-                  Mid-Sized Buyers Get started
+                  Join the waiting list
                 </Button>
               </div>
               <div className="flex w-[34%] flex-col gap-[42px] rounded-[40px] bg-white-a700 px-8 py-[82px] lg:py-8 md:w-full md:py-5 sm:p-4">

@@ -67,9 +67,7 @@ export default function HomepageAPage() {
                             as="p"
                             className="w-[80%] text-[25px] font-normal leading-[157.4%] text-gray-600 lg:w-full lg:text-[21px] md:w-full"
                           >
-                            Are you an SME supplier who want a free ESG Assessment & Report aligned with CSRD
-                            which you can send to buyers? Then sign-up to the EcoEasi Supply Chain ESG
-                            compliance platform.
+                            EcoEasi empowers SME suppliers to meet the ESG requests from their CSRD customers. EcoEasi will be soon be live. Join our waiting list and unlock EcoEasi's collaborative platform that provides insights in an ESG report.
                           </Text>
                           <Button
                             size="lg"
@@ -79,9 +77,9 @@ export default function HomepageAPage() {
                              hover:bg-deep_purple-a400 hover:!text-white
                              transition-colors duration-300 flex flex-row items-center justify-center text-center 
                              cursor-pointer whitespace-nowrap h-[68px] text-[18px]"
-                            onClick={() => navigate('/sustainabilityreportoption')}
+                            onClick={() => navigate('/login')}
                           >
-                            SMEs Get Started
+                            Join the waiting list
                           </Button>
                         </div>
                         <div className="flex w-[34%] flex-col gap-[34px] rounded-[40px] bg-white-a700 px-8 py-[86px] lg:py-8 md:w-full md:py-5 sm:p-4">
@@ -114,7 +112,7 @@ export default function HomepageAPage() {
                                 **********
                               </Text>
                               <Button size="xs" className="mt-2.5 min-w-[40px] rounded px-3 font-bold">
-                                LogIn
+                                Join the waiting list
                               </Button>
                             </div>
                             <Img

@@ -171,7 +171,7 @@ export default function Header({ className = "", simplified = false, onLogout, .
                     shape="round" 
                     className="mt-5 min-w-[154px] !bg-white rounded-[36px] px-[34px] font-bold sm:px-4 text-gray-900 border border-gray-900 hover:bg-green-500 hover:text-white hover:border-green-500 transition-colors duration-300"
                   >
-                    Login
+                    Join Waitlist
                   </Button>
                 </div>
               </div>
@@ -186,7 +186,7 @@ export default function Header({ className = "", simplified = false, onLogout, .
                 className="min-w-[154px] !bg-white rounded-[36px] px-[34px] font-bold sm:px-4 text-gray-900 border border-gray-900 hover:bg-green-500 hover:text-white hover:border-green-500 transition-colors duration-300"
                 onClick={() => navigate('/login')}
               >
-                Login
+                Join Waitlist
               </Button>
             </div>
           )}
