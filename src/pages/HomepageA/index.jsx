@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Slider, Img, Text, Heading, Button } from "../../components";
 import Header from "../../components/Header";
@@ -9,13 +10,37 @@ import HomepageaMainsection from "./HomepageaMainsection";
 import PhotoAndDescriptionSection from "./PhotoAndDescriptionSection";
 import PricingOptionsSection from "./PricingOptionsSection";
 import Group368Page from "../Group368";
-import React from "react";
 import { useNavigate } from 'react-router-dom';
 
 export default function HomepageAPage() {
-  const [sliderState, setSliderState] = React.useState(0);
+  const [sliderState, setSliderState] = useState(0);
+  const [isAutoPlay, setIsAutoPlay] = useState(true);
   const sliderRef = React.useRef(null);
   const navigate = useNavigate();
+
+  // Function to check if device is mobile
+  const isMobile = () => {
+    return window.innerWidth <= 768;
+  };
+
+  // Handle any interaction on mobile
+  const handleMobileInteraction = (e) => {
+    if (isMobile()) {
+      setIsAutoPlay(false);
+    }
+  };
+
+  useEffect(() => {
+    // Add touch event listeners for mobile
+    document.addEventListener('touchstart', handleMobileInteraction);
+    document.addEventListener('touchmove', handleMobileInteraction);
+    
+    // Cleanup
+    return () => {
+      document.removeEventListener('touchstart', handleMobileInteraction);
+      document.removeEventListener('touchmove', handleMobileInteraction);
+    };
+  }, []);
 
   return (
     <>
@@ -30,7 +55,7 @@ export default function HomepageAPage() {
         <Header className="absolute left-0 right-0 top-0 m-auto w-full max-w-[1402px] z-10 lg:px-5 md:px-5" />
         <div className="relative h-[1042px] content-center lg:h-auto md:h-auto">
           <Slider
-            autoPlay
+            autoPlay={isAutoPlay}
             autoPlayInterval={2000}
             responsive={{ 0: { items: 1 } }}
             renderDotsItem={(props) => {
