@@ -16,7 +16,7 @@ const WaitingListPage = () => {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          procedure: "JOIN_WAITLIST",
+          procedure: "ADD_TO_WAITLIST",
           payload: {
             email: email
           }
