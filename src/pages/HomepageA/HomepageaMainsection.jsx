@@ -33,7 +33,7 @@ export default function HomepageaMainsection() {
                       <Heading
                         size="headinglg"
                         as="h5"
-                        className="text-right text-[30px] font-bold leading-[120%] text-black-900 lg:text-[25px] md:text-[20px] sm:text-[16px]"
+                        className="text-right text-[30px] font-bold leading-[120%] text-black-900 lg:text-[25px] md:text-[20px] sm:text-[10px]"
                       >
                         <>
                           High Cost <br />& Poor Results
@@ -41,7 +41,7 @@ export default function HomepageaMainsection() {
                       </Heading>
                     </div>
                     <div className="w-[48%] flex flex-col items-end">
-                      <Text size="textmd" as="p" className="text-[18px] font-normal text-deep_purple-a400 lg:text-[15px] md:text-[14px] sm:text-[13px] text-right">
+                      <Text size="textmd" as="p" className="text-[18px] font-normal text-deep_purple-a400 lg:text-[15px] md:text-[14px] sm:text-[10px] text-right">
                         With EcoEasi
                       </Text>
                       <Heading
