@@ -33,7 +33,7 @@ export default function HomepageaMainsection() {
                       <Heading
                         size="headinglg"
                         as="h5"
-                        className="text-right text-[30px] font-bold leading-[120%] text-black-900 lg:text-[25px] md:text-[20px] sm:text-[5px]"
+                        className="text-right text-[30px] font-bold leading-[120%] text-black-900 lg:text-[25px] md:text-[20px] sm:text-[8px]"
                       >
                         <>
                           High Cost <br />& Poor Results
@@ -47,7 +47,7 @@ export default function HomepageaMainsection() {
                       <Heading
                         size="headinglg"
                         as="h6"
-                        className="text-right text-[30px] font-bold leading-[120%] !text-deep_purple-a400 lg:text-[25px] md:text-[20px] sm:text-[5px]"
+                        className="text-right text-[30px] font-bold leading-[120%] !text-deep_purple-a400 lg:text-[25px] md:text-[20px] sm:text-[8px]"
                       >
                         <>
                           Lower Cost & Better <br />
